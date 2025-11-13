@@ -1,0 +1,363 @@
+ELF file SHA256: 8db1b4081
+
+Rebooting...
+   ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40379ec1
+--- 0x40379ec1: esp_restart_noos at D:/ESP_SDK_5_0/container/v5.4.1/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x56c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xc2c
+load:0x403cb700,len:0x2e58
+entry 0x403c890c
+I (40) octal_psram: vendor id    : 0x0d (AP)
+I (40) octal_psram: dev id       : 0x02 (generation 3)
+I (40) octal_psram: density      : 0x03 (64 Mbit)
+I (42) octal_psram: good-die     : 0x01 (Pass)
+I (46) octal_psram: Latency      : 0x01 (Fixed)
+I (51) octal_psram: VCC          : 0x01 (3V)
+I (55) octal_psram: SRF          : 0x01 (Fast Refresh)
+I (59) octal_psram: BurstType    : 0x01 (Hybrid Wrap)
+I (64) octal_psram: BurstLen     : 0x01 (32 Byte)
+I (69) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)
+I (74) octal_psram: DriveStrength: 0x00 (1/1)
+I (78) MSPI Timing: PSRAM timing tuning index: 5
+I (82) esp_psram: Found 8MB PSRAM device
+I (86) esp_psram: Speed: 80MHz
+I (89) cpu_start: Multicore app
+I (103) cpu_start: Pro cpu start user code
+I (103) cpu_start: cpu freq: 240000000 Hz
+I (103) app_init: Application information:
+I (103) app_init: Project name:     xiaozhi
+I (107) app_init: App version:      2.0.8
+I (111) app_init: Compile time:     Nov 12 2025 16:28:18
+I (116) app_init: ELF file SHA256:  8db1b4081...
+I (120) app_init: ESP-IDF:          v5.4.1
+I (124) efuse_init: Min chip rev:     v0.0
+I (128) efuse_init: Max chip rev:     v0.99
+I (132) efuse_init: Chip rev:         v0.2
+I (136) heap_init: Initializing. RAM available for dynamic allocation:
+I (142) heap_init: At 3FCAC5A8 len 0003D168 (244 KiB): RAM
+I (147) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (152) heap_init: At 600FE11C len 00001EBC (7 KiB): RTCRAM
+I (158) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator
+I (165) spi_flash: detected chip: generic
+I (168) spi_flash: flash io: qio
+I (171) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (177) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (184) main_task: Started on CPU0
+I (214) esp_psram: Reserving pool of 64K of internal memory for DMA/internal allocations      
+I (214) main_task: Calling app_main()
+I (244) Board: UUID=7cbe9889-2602-4ce2-9127-c57560300802 SKU=lichuang-dev
+I (244) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0  
+I (244) SmartDualNetworkBoard: 🔧 ML307R Hardware Configuration:
+I (254) SmartDualNetworkBoard:    - Reset Pin: GPIO5
+I (254) SmartDualNetworkBoard:    - UART TX Pin: GPIO17 (ESP32 → ML307R RX)
+I (264) SmartDualNetworkBoard:    - UART RX Pin: GPIO18 (ESP32 ← ML307R TX)
+I (264) SmartDualNetworkBoard: 📌 ML307 reset pin (GPIO5) set to HIGH (resetting module)      
+I (374) SmartDualNetworkBoard: 📌 ML307 reset pin (GPIO5) set to LOW (normal operation)       
+I (374) SmartDualNetworkBoard: ⏳ Waiting for ML307R module to boot (5 seconds)...
+I (5374) SmartDualNetworkBoard: ✅ ML307R boot wait completed, starting UART detection...
+I (5374) SmartDualNetworkBoard: 🌐 Initialize ML307 4G board
+I (5374) Board: UUID=7cbe9889-2602-4ce2-9127-c57560300802 SKU=lichuang-dev
+I (5374) SmartDualNetworkBoard: 📡 Network monitor task running (check interval: 1s)
+I (5384) SmartDualNetworkBoard: ✅ Network monitor task started
+I (5394) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (5404) button: IoT Button Version: 4.1.4
+I (5404) gpio: GPIO[47]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0
+
+I (5414) LichuangDevBoard: ADC initialized for battery voltage detection (CH8=ref, CH9=battery)
+I (5424) QMI8658: Fall detection initialized with Gravity Vector Comparison method.
+I (5424) QMI8658: QMI8658 device detected successfully!
+I (5444) QMI8658: QMI8658 initialized successfully
+I (5444) gpio: GPIO[39]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0
+
+I (5564) Display: Power management not supported
+I (5604) LcdDisplay: Turning display on
+I (5604) LcdDisplay: Initialize LVGL library
+I (5604) LcdDisplay: Initialize LVGL port
+I (5604) LVGL: Starting LVGL task
+I (5604) LcdDisplay: Adding LCD display
+I (5614) Backlight: Set brightness to 75
+I (5624) LichuangDevBoard: LichuangDevBoard initialized with dual network support (WiFi + ML307R 4G)
+I (5624) LichuangDevBoard: Power management: GPIO47 button, GPIO4 power control
+I (5634) Application: STATE: starting
+I (5634) BoxAudioCodec: Duplex channels created
+I (5644) ES8311: Work in Slave mode
+I (5644) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0
+
+I (5654) ES7210: Work in Slave mode
+I (5664) ES7210: Enable ES7210_INPUT_MIC1
+I (5664) ES7210: Enable ES7210_INPUT_MIC2
+I (5664) ES7210: Enable ES7210_INPUT_MIC3
+I (5664) ES7210: Enable ES7210_INPUT_MIC4
+I (5674) ES7210: Enable TDM mode
+I (5674) BoxAudioCodec: BoxAudioDevice initialized
+I (5674) I2S_IF: channel mode 2 bits:16/16 channel:4 mask:3
+I (5684) I2S_IF: TDM Mode 0 bits:16/16 channel:4 sample_rate:16000 mask:3
+I (5684) I2S_IF: channel mode 0 bits:16/16 channel:4 mask:3
+I (5694) I2S_IF: STD Mode 1 bits:32/32 channel:4 sample_rate:16000 mask:0
+I (5704) ES7210: Bits 16
+I (5704) ES7210: Enable ES7210_INPUT_MIC1
+I (5714) ES7210: Enable ES7210_INPUT_MIC2
+I (5714) ES7210: Enable ES7210_INPUT_MIC3
+I (5714) ES7210: Enable ES7210_INPUT_MIC4
+I (5724) ES7210: Enable TDM mode
+I (5724) ES7210: Unmuted
+I (5724) Adev_Codec: Open codec device OK
+I (5724) AudioCodec: Set input enable to true
+I (5724) I2S_IF: Mode 0 need extend bits 64 to 32
+I (5734) I2S_IF: channel mode 0 bits:16/32 channel:2 mask:1
+I (5734) I2S_IF: STD Mode 1 bits:16/32 channel:2 sample_rate:16000 mask:1
+I (5764) Adev_Codec: Open codec device OK
+I (5764) AudioCodec: Set output enable to true
+I (5764) AudioCodec: Audio codec started
+I (5764) AfeAudioProcessor: AFE constructor - Free heap: 8448800 bytes
+I (5764) AfeAudioProcessor: AFE constructor - Free internal heap: 185991 bytes
+I (5774) AudioCodec: Set output volume to 70
+I (5774) Application: Audio volume initialized to: 70
+I (5784) AudioService: OpusHead: version=1, channels=1, sample_rate=16000
+I (5794) Application: WiFi not connected on startup, playing notification sound
+I (5794) Application: Initializing IMU sensor...
+I (5804) Application: IMU sensor initialized successfully
+I (5804) Application: IMU sensor type: QMI8658, I2C address: 0x6A
+I (5814) QMI8658: Upright gravity vector set to: [0.00, -1.00, 0.00]
+I (5814) Application: IMU timer started (4ms interval ~ 250Hz)
+I (5824) Application: IMU data will be logged every 1 second
+I (5824) Application: Initializing 433MHz UART task...
+I (5834) UART_433: Initializing 433MHz UART...
+I (5834) UART_433: Installing UART driver with DMA support...
+I (5844) UART_433: 433MHz UART initialized successfully on GPIO6(TX)/GPIO7(RX) with DMA mode  
+I (5854) Application: 433MHz UART task created successfully
+I (5854) UART_433_Task: 433MHz task started on core 0
+I (5854) Application: Initializing WiFi connection monitor
+I (5864) Application: WiFi monitor timer started (1 second interval)
+I (5874) uart: queue free spaces: 100
+I (5874) AtUart: Detecting baud rate...
+I (5904) AtUart: Detected baud rate: 921600
+I (5904) AtModem: Detected modem: ML307R-DL-MBRH0S01
+I (5904) AtModem: Waiting for network ready...
+I (5914) Ml307Board: Network is ready
+I (5914) Ml307AtModem: PDP Context 1 IP: 10.155.22.225
+I (5924) Ml307Board: ML307 Revision: ML307R-DL-MBRH0S01
+I (5924) Ml307Board: ML307 IMEI: 862041074232258
+I (5924) Ml307Board: ML307 ICCID: 89860812192380763362
+I (5934) Application: STATE: activating
+I (5934) Ota: Current version: 2.0.8
+I (6024) Ml307Http: HTTP connection created, ID: 0, protocol: http, host: www.bysxai.com
+I (6694) Ml307Http: HTTP request successful, status code: 200
+I (6714) Ml307Http: HTTP connection closed, ID: 0
+I (6714) Ota: No websocket section found!
+W (6714) Ota: No server_time section found!
+
+abort() was called at PC 0x4214fd1f on core 0
+--- 0x4214fd1f: __cxxabiv1::__terminate(void (*)()) at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_terminate.cc:48
+
+
+
+Backtrace: 0x40379f7d:0x3fcb0640 0x40384d65:0x3fcb0660 0x4038c61e:0x3fcb0680 0x4214fd1f:0x3fcb06f0 0x4214fd54:0x3fcb0710 0x4214fe2f:0x3fcb0730 0x421587bf:0x3fcb0750 0x4201c702:0x3fcb0770 0x4201c7c6:0x3fcb0880 0x4201cee5:0x3fcb08c0 0x42019262:0x3fcb09b0 0x4201ad42:0x3fcb0b10 0x4201d5d9:0x3fcb0d30 0x4219e523:0x3fcb0d50
+--- 0x40379f7d: panic_abort at D:/ESP_SDK_5_0/container/v5.4.1/esp-idf/components/esp_system/panic.c:454
+--- 0x40384d65: esp_system_abort at D:/ESP_SDK_5_0/container/v5.4.1/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4038c61e: abort at D:/ESP_SDK_5_0/container/v5.4.1/esp-idf/components/newlib/abort.c:38
+--- 0x4214fd1f: __cxxabiv1::__terminate(void (*)()) at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_terminate.cc:48
+--- 0x4214fd54: std::terminate() at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_terminate.cc:58 (discriminator 1)
+--- 0x4214fe2f: __cxa_throw at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_throw.cc:98
+--- 0x421587bf: std::__throw_invalid_argument(char const*) at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/libstdc++-v3/src/c++11/functexcept.cc:78 (discriminator 2)
+--- 0x4201c702: int __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned int*, int) at D:/ESP_SDK_5_0/tools/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/ext/string_conversions.h:85
+---  (inlined by) std::__cxx11::stoi(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int*, int) at D:/ESP_SDK_5_0/tools/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/bits/basic_string.h:4165
+---  (inlined by) Ota::ParseVersion(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) at E:/S3_BYSX/aibox_s3/main/ota.cc:393
+--- 0x4201c7c6: Ota::IsNewVersionAvailable(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) at E:/S3_BYSX/aibox_s3/main/ota.cc:401
+--- 0x4201cee5: Ota::CheckVersion() at E:/S3_BYSX/aibox_s3/main/ota.cc:232
+--- 0x42019262: Application::CheckNewVersion(Ota&) at E:/S3_BYSX/aibox_s3/main/application.cc:103
+--- 0x4201ad42: Application::Start() at E:/S3_BYSX/aibox_s3/main/application.cc:433
+--- 0x4201d5d9: app_main at E:/S3_BYSX/aibox_s3/main/main.cc:29
+--- 0x4219e523: main_task at D:/ESP_SDK_5_0/container/v5.4.1/esp-idf/components/freertos/app_startup.c:208
+
+
+
+
+
+ELF file SHA256: 8db1b4081
+
+Rebooting...
+   ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40379ec1
+--- 0x40379ec1: esp_restart_noos at D:/ESP_SDK_5_0/container/v5.4.1/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x56c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xc2c
+load:0x403cb700,len:0x2e58
+entry 0x403c890c
+I (40) octal_psram: vendor id    : 0x0d (AP)
+I (40) octal_psram: dev id       : 0x02 (generation 3)
+I (40) octal_psram: density      : 0x03 (64 Mbit)
+I (42) octal_psram: good-die     : 0x01 (Pass)
+I (46) octal_psram: Latency      : 0x01 (Fixed)
+I (51) octal_psram: VCC          : 0x01 (3V)
+I (55) octal_psram: SRF          : 0x01 (Fast Refresh)
+I (59) octal_psram: BurstType    : 0x01 (Hybrid Wrap)
+I (64) octal_psram: BurstLen     : 0x01 (32 Byte)
+I (69) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)
+I (74) octal_psram: DriveStrength: 0x00 (1/1)
+I (78) MSPI Timing: PSRAM timing tuning index: 5
+I (82) esp_psram: Found 8MB PSRAM device
+I (86) esp_psram: Speed: 80MHz
+I (89) cpu_start: Multicore app
+I (103) cpu_start: Pro cpu start user code
+I (103) cpu_start: cpu freq: 240000000 Hz
+I (103) app_init: Application information:
+I (103) app_init: Project name:     xiaozhi
+I (107) app_init: App version:      2.0.8
+I (111) app_init: Compile time:     Nov 12 2025 16:28:18
+I (116) app_init: ELF file SHA256:  8db1b4081...
+I (120) app_init: ESP-IDF:          v5.4.1
+I (124) efuse_init: Min chip rev:     v0.0
+I (128) efuse_init: Max chip rev:     v0.99
+I (132) efuse_init: Chip rev:         v0.2
+I (136) heap_init: Initializing. RAM available for dynamic allocation:
+I (142) heap_init: At 3FCAC5A8 len 0003D168 (244 KiB): RAM
+I (147) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (152) heap_init: At 600FE11C len 00001EBC (7 KiB): RTCRAM
+I (158) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator
+I (165) spi_flash: detected chip: generic
+I (168) spi_flash: flash io: qio
+I (171) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (177) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (184) main_task: Started on CPU0
+I (214) esp_psram: Reserving pool of 64K of internal memory for DMA/internal allocations      
+I (214) main_task: Calling app_main()
+I (244) Board: UUID=7cbe9889-2602-4ce2-9127-c57560300802 SKU=lichuang-dev
+I (244) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0  
+I (244) SmartDualNetworkBoard: 🔧 ML307R Hardware Configuration:
+I (254) SmartDualNetworkBoard:    - Reset Pin: GPIO5
+I (254) SmartDualNetworkBoard:    - UART TX Pin: GPIO17 (ESP32 → ML307R RX)
+I (264) SmartDualNetworkBoard:    - UART RX Pin: GPIO18 (ESP32 ← ML307R TX)
+I (264) SmartDualNetworkBoard: 📌 ML307 reset pin (GPIO5) set to HIGH (resetting module)      
+I (374) SmartDualNetworkBoard: 📌 ML307 reset pin (GPIO5) set to LOW (normal operation)       
+I (374) SmartDualNetworkBoard: ⏳ Waiting for ML307R module to boot (5 seconds)...
+I (5374) SmartDualNetworkBoard: ✅ ML307R boot wait completed, starting UART detection...
+I (5374) SmartDualNetworkBoard: 🌐 Initialize ML307 4G board
+I (5374) Board: UUID=7cbe9889-2602-4ce2-9127-c57560300802 SKU=lichuang-dev
+I (5374) SmartDualNetworkBoard: 📡 Network monitor task running (check interval: 1s)
+I (5384) SmartDualNetworkBoard: ✅ Network monitor task started
+I (5394) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (5404) button: IoT Button Version: 4.1.4
+I (5404) gpio: GPIO[47]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0
+
+I (5414) LichuangDevBoard: ADC initialized for battery voltage detection (CH8=ref, CH9=battery)
+I (5424) QMI8658: Fall detection initialized with Gravity Vector Comparison method.
+I (5424) QMI8658: QMI8658 device detected successfully!
+I (5444) QMI8658: QMI8658 initialized successfully
+I (5444) gpio: GPIO[39]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0
+
+I (5564) Display: Power management not supported
+I (5604) LcdDisplay: Turning display on
+I (5604) LcdDisplay: Initialize LVGL library
+I (5604) LcdDisplay: Initialize LVGL port
+I (5604) LVGL: Starting LVGL task
+I (5604) LcdDisplay: Adding LCD display
+I (5614) Backlight: Set brightness to 75
+I (5624) LichuangDevBoard: LichuangDevBoard initialized with dual network support (WiFi + ML307R 4G)
+I (5624) LichuangDevBoard: Power management: GPIO47 button, GPIO4 power control
+I (5634) Application: STATE: starting
+I (5634) BoxAudioCodec: Duplex channels created
+I (5644) ES8311: Work in Slave mode
+I (5644) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0
+
+I (5654) ES7210: Work in Slave mode
+I (5664) ES7210: Enable ES7210_INPUT_MIC1
+I (5664) ES7210: Enable ES7210_INPUT_MIC2
+I (5664) ES7210: Enable ES7210_INPUT_MIC3
+I (5664) ES7210: Enable ES7210_INPUT_MIC4
+I (5674) ES7210: Enable TDM mode
+I (5674) BoxAudioCodec: BoxAudioDevice initialized
+I (5674) I2S_IF: channel mode 2 bits:16/16 channel:4 mask:3
+I (5684) I2S_IF: TDM Mode 0 bits:16/16 channel:4 sample_rate:16000 mask:3
+I (5684) I2S_IF: channel mode 0 bits:16/16 channel:4 mask:3
+I (5694) I2S_IF: STD Mode 1 bits:32/32 channel:4 sample_rate:16000 mask:0
+I (5704) ES7210: Bits 16
+I (5704) ES7210: Enable ES7210_INPUT_MIC1
+I (5714) ES7210: Enable ES7210_INPUT_MIC2
+I (5714) ES7210: Enable ES7210_INPUT_MIC3
+I (5714) ES7210: Enable ES7210_INPUT_MIC4
+I (5724) ES7210: Enable TDM mode
+I (5724) ES7210: Unmuted
+I (5724) Adev_Codec: Open codec device OK
+I (5724) AudioCodec: Set input enable to true
+I (5724) I2S_IF: Mode 0 need extend bits 64 to 32
+I (5734) I2S_IF: channel mode 0 bits:16/32 channel:2 mask:1
+I (5734) I2S_IF: STD Mode 1 bits:16/32 channel:2 sample_rate:16000 mask:1
+I (5764) Adev_Codec: Open codec device OK
+I (5764) AudioCodec: Set output enable to true
+I (5764) AudioCodec: Audio codec started
+I (5764) AfeAudioProcessor: AFE constructor - Free heap: 8448800 bytes
+I (5764) AfeAudioProcessor: AFE constructor - Free internal heap: 185991 bytes
+I (5774) AudioCodec: Set output volume to 70
+I (5774) Application: Audio volume initialized to: 70
+I (5784) AudioService: OpusHead: version=1, channels=1, sample_rate=16000
+I (5794) Application: WiFi not connected on startup, playing notification sound
+I (5794) Application: Initializing IMU sensor...
+I (5804) Application: IMU sensor initialized successfully
+I (5804) Application: IMU sensor type: QMI8658, I2C address: 0x6A
+I (5814) QMI8658: Upright gravity vector set to: [0.00, -1.00, 0.00]
+I (5814) Application: IMU timer started (4ms interval ~ 250Hz)
+I (5824) Application: IMU data will be logged every 1 second
+I (5824) Application: Initializing 433MHz UART task...
+I (5834) UART_433: Initializing 433MHz UART...
+I (5834) UART_433: Installing UART driver with DMA support...
+I (5844) UART_433: 433MHz UART initialized successfully on GPIO6(TX)/GPIO7(RX) with DMA mode  
+I (5854) UART_433_Task: 433MHz task started on core 0
+I (5854) Application: 433MHz UART task created successfully
+I (5864) Application: Initializing WiFi connection monitor
+I (5864) Application: WiFi monitor timer started (1 second interval)
+I (5874) uart: queue free spaces: 100
+I (5874) AtUart: Detecting baud rate...
+I (5904) AtUart: Detected baud rate: 921600
+I (5904) AtModem: Detected modem: ML307R-DL-MBRH0S01
+I (5904) AtModem: Waiting for network ready...
+I (5914) Ml307Board: Network is ready
+I (5914) Ml307AtModem: PDP Context 1 IP: 10.155.22.225
+I (5924) Ml307Board: ML307 Revision: ML307R-DL-MBRH0S01
+I (5924) Ml307Board: ML307 IMEI: 862041074232258
+I (5924) Ml307Board: ML307 ICCID: 89860812192380763362
+I (5934) Application: STATE: activating
+I (5934) Ota: Current version: 2.0.8
+I (6024) Ml307Http: HTTP connection created, ID: 0, protocol: http, host: www.bysxai.com
+I (6694) Ml307Http: HTTP request successful, status code: 200
+I (6714) Ml307Http: HTTP connection closed, ID: 0
+I (6714) Ota: No websocket section found!
+W (6714) Ota: No server_time section found!
+
+abort() was called at PC 0x4214fd1f on core 0
+--- 0x4214fd1f: __cxxabiv1::__terminate(void (*)()) at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_terminate.cc:48
+
+
+
+Backtrace: 0x40379f7d:0x3fcb0640 0x40384d65:0x3fcb0660 0x4038c61e:0x3fcb0680 0x4214fd1f:0x3fcb06f0 0x4214fd54:0x3fcb0710 0x4214fe2f:0x3fcb0730 0x421587bf:0x3fcb0750 0x4201c702:0x3fcb0770 0x4201c7c6:0x3fcb0880 0x4201cee5:0x3fcb08c0 0x42019262:0x3fcb09b0 0x4201ad42:0x3fcb0b10 0x4201d5d9:0x3fcb0d30 0x4219e523:0x3fcb0d50
+--- 0x40379f7d: panic_abort at D:/ESP_SDK_5_0/container/v5.4.1/esp-idf/components/esp_system/panic.c:454
+--- 0x40384d65: esp_system_abort at D:/ESP_SDK_5_0/container/v5.4.1/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4038c61e: abort at D:/ESP_SDK_5_0/container/v5.4.1/esp-idf/components/newlib/abort.c:38 
+--- 0x4214fd1f: __cxxabiv1::__terminate(void (*)()) at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_terminate.cc:48
+--- 0x4214fd54: std::terminate() at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_terminate.cc:58 (discriminator 1)
+--- 0x4214fe2f: __cxa_throw at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_throw.cc:98
+--- 0x421587bf: std::__throw_invalid_argument(char const*) at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/libstdc++-v3/src/c++11/functexcept.cc:78 (discriminator 2)
+--- 0x4201c702: int __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned int*, int) at D:/ESP_SDK_5_0/tools/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/ext/string_conversions.h:85
+---  (inlined by) std::__cxx11::stoi(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int*, int) at D:/ESP_SDK_5_0/tools/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/bits/basic_string.h:4165
+---  (inlined by) Ota::ParseVersion(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) at E:/S3_BYSX/aibox_s3/main/ota.cc:393
+--- 0x4201c7c6: Ota::IsNewVersionAvailable(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) at E:/S3_BYSX/aibox_s3/main/ota.cc:401
+--- 0x4201cee5: Ota::CheckVersion() at E:/S3_BYSX/aibox_s3/main/ota.cc:232
+--- 0x42019262: Application::CheckNewVersion(Ota&) at E:/S3_BYSX/aibox_s3/main/application.cc:103
+--- 0x4201ad42: Application::Start() at E:/S3_BYSX/aibox_s3/main/application.cc:433
+--- 0x4201d5d9: app_main at E:/S3_BYSX/aibox_s3/main/main.cc:29
+--- 0x4219e523: main_task at D:/ESP_SDK_5_0/container/v5.4.1/esp-idf/components/freertos/app_startup.c:208
+
+4G模块启动成功日志
